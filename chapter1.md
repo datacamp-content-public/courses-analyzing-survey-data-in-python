@@ -40,3 +40,16 @@ This is an example exercise.
 ```{python}
 
 ```
+
+---
+
+## Graphing continuous data
+
+```yaml
+type: VideoExercise
+key: 787a96637c
+xp: 50
+```
+
+`@projector_key`
+4b324f55577ad2685db07ab5a50c9358
