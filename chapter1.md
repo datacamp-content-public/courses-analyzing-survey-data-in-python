@@ -232,3 +232,37 @@ chi_square_stat, p_value, dof, expected = chi2_contingency(observations)
 ```{python}
 
 ```
+
+***
+
+```yaml
+type: NormalExercise
+key: 0904734431
+```
+
+`@instructions`
+To finish the test we must determine our chi2_critical value. This is done using the .ppf() method of the chi2 function we imported.
+
+The arguments of the function are:
+* 1-alpha (alpha is our threshold probability)
+* degrees of freedom.
+
+`@hint`
+alpha = 0.05
+Chi2_critical = chi2.ppf(1-alpha,dof)
+
+`@sample_code`
+```{python}
+alpha = 0.05
+Chi2_critical = chi2.ppf(_____,_____)
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
