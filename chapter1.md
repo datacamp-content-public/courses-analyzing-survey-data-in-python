@@ -266,3 +266,38 @@ Chi2_critical = chi2.ppf(1-alpha,dof)
 ```{python}
 
 ```
+
+***
+
+```yaml
+type: NormalExercise
+key: cec58955aa
+```
+
+`@instructions`
+Finally, we should reject the null hypothesis if our p_value is less than our alpha, and our test statistic is greater than our threshold statistic. Create an if-then code the prints "reject null hypothesis" if the criteria is met, elsefail
+
+`@hint`
+The criteria is;
+if (Chi2_critical<chi_square_stat) and (p_value<alpha) (then reject null hypothesis)
+
+other wise
+fail to reject null hypothesis
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+if (Chi2_critical<chi_square_stat) and (p_value<alpha):
+    print("Reject Null")
+else:
+    print("Fail to reject null hypothesis")
+```
+
+`@sct`
+```{python}
+
+```
