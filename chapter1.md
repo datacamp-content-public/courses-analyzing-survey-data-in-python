@@ -248,8 +248,7 @@ The arguments of the function are:
 * degrees of freedom.
 
 `@hint`
-alpha = 0.05
-Chi2_critical = chi2.ppf(1-alpha,dof)
+
 
 `@sample_code`
 ```{python}
@@ -259,7 +258,8 @@ Chi2_critical = chi2.ppf(_____,_____)
 
 `@solution`
 ```{python}
-
+alpha = 0.05
+Chi2_critical = chi2.ppf(1-alpha,dof)
 ```
 
 `@sct`
