@@ -116,6 +116,37 @@ The code part consists of:
 
 ```yaml
 type: NormalExercise
+key: 605fed9295
+```
+
+`@instructions`
+We first must import the relevant functions/packages we need to perform the hypothesis test. These are;
+* numpy
+* chi2_contingency and chi2 from the stats package of scipy
+
+`@hint`
+
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+import numpy as np
+from scipy.stats import chi2_contingency,chi2
+```
+
+`@sct`
+```{python}
+
+```
+
+***
+
+```yaml
+type: NormalExercise
 key: 8823c63a8f
 xp: 50
 ```
@@ -148,54 +179,23 @@ left = df[df['Left - right handed']=='left handed']['Gender'].value_counts()
 
 ```yaml
 type: NormalExercise
-key: 605fed9295
-```
-
-`@instructions`
-We first must import the relevant functions/packages we need to perform the hypothesis test. These are;
-* numpy
-* chi2_contingency and chi2 from the stats package of scipy
-
-`@hint`
-
-
-`@sample_code`
-```{python}
-
-```
-
-`@solution`
-```{python}
-import numpy as np
-from scipy.stats import chi2_contingency,chi2
-```
-
-`@sct`
-```{python}
-
-```
-
-***
-
-```yaml
-type: NormalExercise
 key: eff3873b19
 ```
 
 `@instructions`
-
+Next, using the values we just put into our left and right dataframes, we must put these values into a single table (numpy array). Call this table observations
 
 `@hint`
 
 
 `@sample_code`
 ```{python}
-
+observations = np.array([_____,_____])
 ```
 
 `@solution`
 ```{python}
-
+observations = np.array([right,left])
 ```
 
 `@sct`
