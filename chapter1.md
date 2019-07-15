@@ -80,7 +80,7 @@ Alternative hypothesis H_A: There is an association  between gender and handedne
 ```yaml
 type: NormalExercise
 key: db15395ed0
-xp: 50
+xp: 35
 ```
 
 `@instructions`
@@ -89,9 +89,10 @@ A hypothesis done in code consists of two parts; the math part and the code part
 The math part consists of stating the hypothesis, our degrees of freedom, critical value of the test statistic (based on degrees of freedom), the desired p_value threshold
 
 The code part consists of:
-	* isolating the data we want from the dataframe
+	* isolating the data we want from the data frame
     * setting up a table to count the values of each category (2x2 for this case)
-    * putting it into
+    * putting the data into the appropriate python functions to get the test statistic, degrees of freedom and p-values
+    * comparing the test statistic and p-value in an if-then statement that will reject or accept the null hypothesis
 
 `@hint`
 
@@ -116,7 +117,7 @@ The code part consists of:
 ```yaml
 type: NormalExercise
 key: 908ff1ec58
-xp: 50
+xp: 35
 ```
 
 `@instructions`
@@ -133,6 +134,38 @@ xp: 50
 `@solution`
 ```{python}
 
+```
+
+`@sct`
+```{python}
+
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: 8823c63a8f
+xp: 30
+```
+
+`@instructions`
+Out of our dataframe we need value counts of the handed-ness for both males and females.
+Thus, create a dataframe for the lefties and one for the righties that performs value counts on the gender
+
+`@hint`
+right = df[df['Left - right handed']==______][_____].______
+left = df[df['Left - right handed']==______][______].______
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+right = df[df['Left - right handed']=='right handed']['Gender'].value_counts()
+left = df[df['Left - right handed']=='left handed']['Gender'].value_counts()
 ```
 
 `@sct`
