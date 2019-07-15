@@ -86,7 +86,7 @@ xp: 50
 `@instructions`
 A hypothesis done in code consists of two parts; the math part and the code part.
 
-The math part consists of stating the hypothesis, our degrees of freedom, critical value of the test statistic (based on degrees of freedom)
+The math part consists of stating the hypothesis, our degrees of freedom, critical value of the test statistic (based on degrees of freedom), the desired p_value threshold
 
 The code part consists of:
 	* isolating the data we want from the dataframe
