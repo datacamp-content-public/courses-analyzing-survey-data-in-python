@@ -202,3 +202,33 @@ observations = np.array([right,left])
 ```{python}
 
 ```
+
+***
+
+```yaml
+type: NormalExercise
+key: a42a62753c
+```
+
+`@instructions`
+The chi2_contingency function outputs the chi2_stat, p_value, dof (degrees of freedom) and expected_values (IN THAT ORDER).
+
+Using this function on our observations array we just made, extract those values.
+
+`@hint`
+
+
+`@sample_code`
+```{python}
+_____,_____,_____,_____ = chi2_contingency(_________)
+```
+
+`@solution`
+```{python}
+chi_square_stat, p_value, dof, expected = chi2_contingency(observations)
+```
+
+`@sct`
+```{python}
+
+```
