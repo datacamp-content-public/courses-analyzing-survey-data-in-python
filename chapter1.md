@@ -143,3 +143,62 @@ left = df[df['Left - right handed']=='left handed']['Gender'].value_counts()
 ```{python}
 
 ```
+
+***
+
+```yaml
+type: NormalExercise
+key: 605fed9295
+```
+
+`@instructions`
+We first must import the relevant functions/packages we need to perform the hypothesis test. These are;
+* numpy
+* chi2_contingency and chi2 from the stats package of scipy
+
+`@hint`
+
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+import numpy as np
+from scipy.stats import chi2_contingency,chi2
+```
+
+`@sct`
+```{python}
+
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: eff3873b19
+```
+
+`@instructions`
+
+
+`@hint`
+
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
