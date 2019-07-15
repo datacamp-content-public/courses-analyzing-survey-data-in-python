@@ -68,7 +68,7 @@ xp: 100
 Performing a chi-square hypothesis test measures the relationship between a categorical input and categorical output. In this exercise we will to a chi-square test of association, to see if there is a relationship between being left (or right) handed and being male (or female).
 
 The Null hypothesis H_0: males and females are equally likely to be left (or right) handed, P_male = P_female (probability of a lefty being male equals probability of being female)
-Alternative hypothesis H_A: There is an association  between gender and handedness (P_male != P_female)
+Alternative hypothesis H_A: There is an association  between gender and handedness (P_male != P_female for someone left handed)
 
 `@pre_exercise_code`
 ```{python}
@@ -80,7 +80,7 @@ Alternative hypothesis H_A: There is an association  between gender and handedne
 ```yaml
 type: NormalExercise
 key: db15395ed0
-xp: 35
+xp: 50
 ```
 
 `@instructions`
@@ -116,37 +116,8 @@ The code part consists of:
 
 ```yaml
 type: NormalExercise
-key: 908ff1ec58
-xp: 35
-```
-
-`@instructions`
-
-
-`@hint`
-
-
-`@sample_code`
-```{python}
-
-```
-
-`@solution`
-```{python}
-
-```
-
-`@sct`
-```{python}
-
-```
-
-***
-
-```yaml
-type: NormalExercise
 key: 8823c63a8f
-xp: 30
+xp: 50
 ```
 
 `@instructions`
